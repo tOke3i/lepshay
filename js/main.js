@@ -7,6 +7,7 @@ var currnetTabContentTrTdLength;
 $(document).ready(function(){
     function detectlong(){
         currnetTabContentTrTdLength = $('li[aria-hidden="false"] .table-td-line').length;
+        $('li[aria-hidden="false"]').addClass('active-tab-content');
         if(currnetTabContentTrTdLength > 5){
             $('.long-table-dots').show();
             $('.long-table-dots span').on('click', function(){
@@ -36,9 +37,3 @@ $(document).ready(function(){
 
     });
 })
-
-
-
-
-
-
