@@ -5,17 +5,22 @@ $( function() {
 
 var currnetTabContentTrTdLength;
 $(document).ready(function(){
-
-
-    $( 'li[aria-hidden="false"]' ).addClass('active-tab-content')
-     currnetTabContentTrTdLength = $('.active-tab-content .table-td-line').length;
-    if(currnetTabContentTrTdLength >5){
-        $('.long-table-dots').show();
-        $('.long-table-dots span').on('click', function(){
-            $('.dot').removeClass('active-dot');
-            $(this).addClass('active-dot');
-        })
+    function detectlong(){
+        currnetTabContentTrTdLength = $('li[aria-hidden="false"] .table-td-line').length;
+        if(currnetTabContentTrTdLength > 5){
+            $('.long-table-dots').show();
+            $('.long-table-dots span').on('click', function(){
+                $('.dot').removeClass('active-dot');
+                $(this).addClass('active-dot');
+            })
+        }else{
+            $('.long-table-dots').hide();
+        }
     }
+
+    $('.tabs-item').on('click',detectlong);
+    detectlong();
+
 
     $('.long-table-dots .dot-first').on('click', function(){
         $('.active-tab-content .table-td-line:nth-child(n+6)').hide();
