@@ -18,6 +18,7 @@ Development and tests(no minifies) build:
 gulp dev-build (generates folder 'build' in the root foolder of you project)
 
 
+
 build/  			There is you project builds (after `gulp production`)
 dev-build/  		There is you project builds (after `dev-build`)
 app/        		Source folder (livereload works from there)

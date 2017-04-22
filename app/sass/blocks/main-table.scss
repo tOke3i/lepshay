@@ -20,36 +20,48 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items:center;
-  .tabs-item.active-tab{
+  .tabs-item.ui-state-active{
     background: #3ab03a;
+    a{
+      color: #fff;
+    }
   }
   .tabs-item{
     font-size:1.4rem;
     background: #fff;
     border:1px solid #d5d7d8;
     padding: 1.3rem 2rem 1.1rem;
+    &:focus{
+      outline: none;
+    }
+      a{
+        color: #5e6469;
+      }
       &:hover{
         background: #49bc1f;
         cursor: pointer;
         border-radius:1px;
       }
     @media(max-width:640px){
-      width:50%;
+      width:100%;
     }
   }
+  @media(max-width:$tablet){
+    justify-content: space-around;
+  }
   @media(max-width:640px){
-    align-items:flex-start;}
+    align-items:flex-start;
+  }
 }
 //tabs ends
 
 //tabs content starts
 .main-table__content-list {
-  margin: 20px;
+  margin: 2rem;
   padding: 0;
   list-style: none;
 
   li {
-    //display: flex;
     display: none;
     overflow: scroll;
     overflow-y: hidden;
@@ -78,7 +90,7 @@
   }
   th{
     background: #dde1e3;
-    height:30px;
+    height:3rem;
     padding:2rem;
     text-transform: uppercase;
     color: #85959e;
@@ -119,7 +131,7 @@
   font-size:3.4rem;
   color: #016da7;
   font-weight:bold;
-  @media(max-width:480px){
+  @media(max-width:$tablet){
     font-size:2rem;
   }
 }
@@ -128,11 +140,11 @@
 }
 .comleted-img{
   display: inline-block;
-  width:26px;
-  height:26px;
+  width:2.6rem;
+  height:2.6rem;
   background: #3faa18;
   border-radius:100%;
-  line-height:26px;
+  line-height:2.6rem;
   text-align: center;
     .fa{
       color: #fff;
@@ -155,6 +167,11 @@
 .long-table-dots{
   text-align: center;
   display: none;
+  margin-bottom:7rem;
+  margin-top:3rem;
+    &:first-child{
+      margin-right:1rem;
+    }
   .dot-first, .dot-second{
     display: inline-block;
     width:1.5rem;

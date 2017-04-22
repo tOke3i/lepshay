@@ -1,7 +1,7 @@
 .top-action-wrap{
-  height:425px;
+  height:45.5rem;
   background: #c0c0c0 url("../../img/top-block-bg.jpg")no-repeat center center;
-  padding:0 2rem 0 4rem;
+  padding:0 4rem 0 4rem;
   @media(max-width:560px){
     background-position: -200px center;
   }
@@ -27,6 +27,9 @@
   display: flex;
   align-items:center;
   height:6.1rem;
+    @media(max-width:650px){
+      justify-content: center;
+    }
 }
 .see-more__btn{
   box-sizing: border-box;

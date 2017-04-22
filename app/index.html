@@ -21,6 +21,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Styles-->
+
 	<link href="css/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -55,24 +56,25 @@
 
 			<section class="main">
 			    <div class="container">
-			        <section class="main-table">
+			        <section class="main-table" id="tabs">
 			            <h2 class="main-table__title">Recently Completed Projects</h2>
 			            <div class="main-table__line"></div>
 			            <!--TABS STARTS-->
 			            <ul class="main-table__tabs">
-			                <li class="tabs-item active-tab tab-item">Technology</li>
-			                <li class="tabs-item">Sales</li>
-			                <li class="tabs-item">Marketing</li>
-			                <li class="tabs-item">Operations</li>
-			                <li class="tabs-item">Professional Services</li>
-			                <li class="tabs-item">HR</li>
-			                <li class="tabs-item">Healthcare</li>
+			                <li class="tabs-item"><a href="#tech_content">Technology</a>
+			                </li>
+			                <li class="tabs-item"><a href="#sales_content">Sales</a></li>
+			                <li class="tabs-item"><a href="#marketing_content">Marketing</a></li>
+			                <li class="tabs-item"><a href="#operations_content">Operations</a></li>
+			                <li class="tabs-item"><a href="#services_content">Professional Services</a></li>
+			                <li class="tabs-item"><a href="#hr_content">HR</a></li>
+			                <li class="tabs-item"><a href="#health_content">Healthcare</a></li>
 			            </ul>
 			            <!--TABS ENDS-->
 			            <!--TABS CONTENT STARTS-->
 			            <ul class="main-table__content-list">
 			                <!--tab-content-tech sarts-->
-			                <li class="tab-content tab-content-tech">
+			                <li class="tab-content tab-content-tech" id="tech_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -342,7 +344,7 @@
 			                </li>
 			                <!--tab-content-tech ends-->
 			                <!--tab-content-sales satrt-->
-			                <li class="tab-content tab-content-sales">
+			                <li class="tab-content tab-content-sales" id="sales_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -358,7 +360,7 @@
 			                        <tr class="table-td-line">
 			                            <td class="table__job-title-td">Head of Sales</td>
 			                            <td  class="table__location-title-td">Los Angeles, California</td>
-			                            <td class="table__salary-title-td">$100 000</td>
+			                            <td class="table__salary-title-td">$100 340</td>
 			                            <td class="table__completed-title-td">
 			                                <div class="comleted-img">
 			                                    <i class="fa fa-check" aria-hidden="true"></i>
@@ -486,7 +488,7 @@
 			                </li>
 			                <!-- tab-content-sales ends-->
 			                <!--tab-content-market satrt-->
-			                <li class="tab-content tab-content-market">
+			                <li class="tab-content tab-content-market" id="marketing_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -630,7 +632,7 @@
 			                </li>
 			                <!-- tab-content-market ends-->
 			                <!--tab-content-market starts-->
-			                <li class="tab-content tab-content-oper">
+			                <li class="tab-content tab-content-oper" id="operations_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -774,7 +776,7 @@
 			                </li>
 			                <!-- tab-content-market ends-->
 			                <!--tab-content-market satrts-->
-			                <li class="tab-content tab-content-prof-serv">
+			                <li class="tab-content tab-content-prof-serv" id="services_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -918,7 +920,7 @@
 			                </li>
 			                <!-- tab-content-market ends-->
 			                <!-- tab-content-market starts-->
-			                <li class="tab-content tab-content-hr">
+			                <li class="tab-content tab-content-hr" id="hr_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -1062,7 +1064,7 @@
 			                </li>
 			                <!-- tab-content-market ends-->
 			                <!--tab-content-market starts-->
-			                <li class="tab-content tab-content-health">
+			                <li class="tab-content tab-content-health" id="health_content">
 			                    <table class="table">
 			                        <!--TH satarts-->
 			                        <tr class="table-th-line">
@@ -1219,8 +1221,11 @@
 
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<sc.ript src="slick.min.js"></sc.ript>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script
+			src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+			integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+			crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 
 </body>
