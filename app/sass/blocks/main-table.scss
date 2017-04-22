@@ -30,12 +30,14 @@
     font-size:1.4rem;
     background: #fff;
     border:1px solid #d5d7d8;
-    padding: 1.3rem 2rem 1.1rem;
+    
     &:focus{
       outline: none;
     }
       a{
+        display: block;
         color: #5e6469;
+        padding: 1.3rem 2rem 1.1rem;
       }
       &:hover{
         background: #49bc1f;
@@ -169,9 +171,12 @@
   display: none;
   margin-bottom:7rem;
   margin-top:3rem;
-    &:first-child{
-      margin-right:1rem;
-    }
+    .dot{
+        margin:1rem;
+      @media(max-width:650px){
+          margin:2rem;
+  }
+     }
   .dot-first, .dot-second{
     display: inline-block;
     width:1.5rem;

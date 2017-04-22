@@ -1,6 +1,7 @@
 .top-action-wrap{
   height:45.5rem;
   background: #c0c0c0 url("../../img/top-block-bg.jpg")no-repeat center center;
+  background-size: cover;
   padding:0 4rem 0 4rem;
   @media(max-width:560px){
     background-position: -200px center;
