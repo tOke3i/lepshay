@@ -228,7 +228,7 @@ a:focus
     height: 45.5rem;
     padding: 0 4rem 0 4rem; 
 
-    background: #c0c0c0 url('../img/top-block-bg.jpg') no-repeat center center;
+    background: #c0c0c0 url('../../img/top-block-bg.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -353,9 +353,7 @@ a:focus
 {
     font-size: 1.4rem;
 
-    padding: 1.3rem 2rem 1.1rem; 
-
-    border: 1px solid #d5d7d8;
+    border: 1px solid #d5d7d8; 
     background: #fff;
 }
 .main-table__tabs .tabs-item:focus
@@ -364,6 +362,10 @@ a:focus
 }
 .main-table__tabs .tabs-item a
 {
+    display: block;
+
+    padding: 1.3rem 2rem 1.1rem; 
+
     color: #5e6469;
 }
 .main-table__tabs .tabs-item:hover
@@ -535,9 +537,9 @@ a:focus
 
     text-align: center;
 }
-.long-table-dots:first-child
+.long-table-dots .dot
 {
-    margin-right: 1rem;
+    margin: 1rem;
 }
 .long-table-dots .dot-first,
 .long-table-dots .dot-second
@@ -607,6 +609,10 @@ a:focus
     {
         -ms-flex-pack: center;
         justify-content: center;
+    }
+    .long-table-dots .dot
+    {
+        margin: 2rem;
     }
 }
 @media (max-width: 640px)
