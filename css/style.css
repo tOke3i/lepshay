@@ -228,7 +228,8 @@ a:focus
     height: 45.5rem;
     padding: 0 4rem 0 4rem; 
 
-    background: #c0c0c0 url('../../img/top-block-bg.jpg') no-repeat center center;
+    background: #c0c0c0 url('../img/top-block-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .top-action-block
