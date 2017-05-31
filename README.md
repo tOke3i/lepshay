@@ -3,7 +3,6 @@ https://toke3i.github.io/lepshay/
 
 Install:
 
-git clone git@github.com:tOke3i/lepshay.git
  Then in project folder open terminal and write: npm i.
 
 Usage:
