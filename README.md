@@ -1,14 +1,15 @@
-# starter-template-gulp
-My starter template 
+Lepshay
+https://toke3i.github.io/lepshay/
 
 Install:
 
-git clone git@github.com:tOke3i/starter-template-gulp.git
+git clone git@github.com:tOke3i/lepshay.git
  Then in project folder open terminal and write: npm i.
 
 Usage:
-npm start (and work).
-
+npm start.
+or
+Can see the result https://toke3i.github.io/lepshay/
 ____________________________________________________________________________________________
 Production build(all minified):
 gulp production (generates folder 'build' in the root foolder of you project)
